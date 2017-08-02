@@ -8,7 +8,7 @@ var dataSource = [
 ];
 
 class Heroes extends React.Component{
-
+ 
     componentDidMount() {
         setTimeout(function(){
             this.setState({ list: dataSource });
