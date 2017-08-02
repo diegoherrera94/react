@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Task from './task'
+import Task from './task';
+import Tasks from './tasks';
 
 class ToDo extends React.Component {
 
@@ -10,12 +11,14 @@ class ToDo extends React.Component {
     }
     render() {
         return (
-            <ul>
-                <Task ref='first' name='Introduction' done />
-                <Task name='Chapter 1 - First component' done/>
-                <Task name='Chapter 2 - Properties' done={false} />
-                <Task />
-            </ul>
+            <div>
+                <Tasks>
+                    <Task ref='first' name='Introduction' done />
+                    <Task name='Chapter 1 - First component' done/>
+                    <Task name='Chapter 2 - Properties' done={false} />
+                    <Task name='test'/>
+                </Tasks>
+            </div>
         )
     }
 };
